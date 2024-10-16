@@ -1,6 +1,6 @@
 ---
 - name: Playbook for Docker installation
-  hosts: all # будет исполняться для всех
+  hosts: app
   become: true # Выполнение от имени root
   tasks:
     - name: Ensure apt package list is updated (apt-get update)
